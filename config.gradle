@@ -1,0 +1,26 @@
+ext{
+    android = [
+            compileSdkVersion     : 26,
+            applicationId         :   "com.ocn.kewanandroid",
+            minSdkVersion         :   23,
+            targetSdkVersion      :  26,
+            versionCode           : 1,
+            versionName           : "1.0"
+    ]
+
+    dependencies=[
+        "appcompat-v7"                   :   "com.android.support:appcompat-v7:26.1.0",
+        "constraint-layout"              :   "com.android.support.constraint:constraint-layout:1.0.2",
+        "SmartRefreshLayout"             :   "com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1",
+        "SmartRefreshHeader"             :   "com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1",
+        "greendao"                        :   "org.greenrobot:greendao:3.2.2",
+
+        "leakcanary-android"            :   "com.squareup.leakcanary:leakcanary-android:1.5.4",
+        "leakcanary-android-no-op"     :   "com.squareup.leakcanary:leakcanary-android-no-op:1.5.4",
+        "crashreport_upgrade"           :   "com.tencent.bugly:crashreport_upgrade:latest.release",
+        "Logger"                         :     "com.orhanobut:logger:2.2.0",
+        "dagger"                         : "com.google.dagger:dagger:2.10",
+        "dagger-compiler"               : "com.google.dagger:dagger-compiler:2.10"
+    ]
+
+}
