@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">KeWanAndroid</string>
+
+
+    <string name="collect_fail">Collect fail</string>
+    <string name="cancel_collect_fail">Cancel collect fail</string>
+    <string name="double_click_exit_tint">Press the back button again to exit the KeWanAndroid</string>
 </resources>

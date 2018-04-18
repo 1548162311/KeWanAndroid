@@ -10,6 +10,10 @@ import android.support.v4.content.ContextCompat;
 import com.ocn.kewanandroid.R;
 import com.ocn.kewanandroid.core.dao.DaoMaster;
 import com.ocn.kewanandroid.core.dao.DaoSession;
+import com.ocn.kewanandroid.di.component.AppComponent;
+import com.ocn.kewanandroid.di.component.DaggerAppComponent;
+import com.ocn.kewanandroid.di.module.AppModule;
+import com.ocn.kewanandroid.di.module.HttpModule;
 import com.ocn.kewanandroid.utils.CommonUtils;
 import com.ocn.kewanandroid.utils.logger.TxtFormatStrategy;
 import com.orhanobut.logger.AndroidLogAdapter;
@@ -38,6 +42,7 @@ public class MyApp extends Application {
     private static MyApp mInstance;
     private RefWatcher refWatcher;
     private DaoSession mDaoSession;
+    private static volatile AppComponent appComponent;
     static {
         SmartRefreshLayout.setDefaultRefreshHeaderCreator(new DefaultRefreshHeaderCreator() {
             @NonNull
@@ -111,5 +116,15 @@ public class MyApp extends Application {
         Logger.addLogAdapter(new DiskLogAdapter(TxtFormatStrategy.newBuilder()
                 .tag(getString(R.string.app_name)).build(getPackageName(), getString(R.string.app_name))));
     }
+    public static synchronized AppComponent getAppComponent(){
+        if (appComponent==null){
+            appComponent = DaggerAppComponent.builder()
+                    .appModule(new AppModule(mInstance))
+                    .httpModule(new HttpModule())
+                    .build();
+        }
+        return appComponent;
+    }
+
 
 }

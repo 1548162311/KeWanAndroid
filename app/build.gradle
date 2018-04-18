@@ -16,8 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
-greendao{
+greendao {
     //数据库的schema版本，也可以理解为数据库版本号
     schemaVersion 1
     //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
@@ -30,10 +31,21 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation rootProject.ext.dependencies["appcompat-v7"]
     implementation rootProject.ext.dependencies["constraint-layout"]
-
+    implementation rootProject.ext.dependencies["design"]
     //ui
     implementation rootProject.ext.dependencies["SmartRefreshLayout"]
     implementation rootProject.ext.dependencies["SmartRefreshHeader"]
+
+    //rx
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["rxjava"]
+
+    //net
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["converter-gson"]
+    implementation rootProject.ext.dependencies["adapter-rxjava2"]
+    implementation rootProject.ext.dependencies["okhttp"]
+    implementation rootProject.ext.dependencies["logging-interceptor"]
 
     //dao
     implementation rootProject.ext.dependencies["greendao"]
@@ -41,10 +53,16 @@ dependencies {
     //other
     implementation rootProject.ext.dependencies["crashreport_upgrade"]
     implementation rootProject.ext.dependencies["Logger"]
+    implementation rootProject.ext.dependencies["fragmentation"]
 
     implementation rootProject.ext.dependencies["dagger"]
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+    implementation rootProject.ext.dependencies["annotation"]
 
+
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
 
     //canary
     debugImplementation rootProject.ext.dependencies["leakcanary-android"]
