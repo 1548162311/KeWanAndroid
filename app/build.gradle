@@ -35,6 +35,9 @@ dependencies {
     //ui
     implementation rootProject.ext.dependencies["SmartRefreshLayout"]
     implementation rootProject.ext.dependencies["SmartRefreshHeader"]
+    implementation rootProject.ext.dependencies["lottie"]
+    implementation rootProject.ext.dependencies["banner"]
+
 
     //rx
     implementation rootProject.ext.dependencies["rxandroid"]
@@ -54,6 +57,8 @@ dependencies {
     implementation rootProject.ext.dependencies["crashreport_upgrade"]
     implementation rootProject.ext.dependencies["Logger"]
     implementation rootProject.ext.dependencies["fragmentation"]
+    implementation rootProject.ext.dependencies["ByeBurger"]
+
 
     implementation rootProject.ext.dependencies["dagger"]
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'

@@ -41,6 +41,7 @@ import com.tencent.bugly.crashreport.CrashReport;
 public class MyApp extends Application {
     private static MyApp mInstance;
     private RefWatcher refWatcher;
+    public static boolean isFirstRun;
     private DaoSession mDaoSession;
     private static volatile AppComponent appComponent;
     static {

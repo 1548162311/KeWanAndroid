@@ -10,6 +10,7 @@ import com.ocn.kewanandroid.base.view.BaseView;
 import com.ocn.kewanandroid.di.component.ActivityComponent;
 import com.ocn.kewanandroid.di.component.DaggerActivityComponent;
 import com.ocn.kewanandroid.di.component.DaggerAppComponent;
+import com.ocn.kewanandroid.di.module.ActivityModule;
 import com.ocn.kewanandroid.utils.CommonUtils;
 
 import javax.inject.Inject;
@@ -20,7 +21,7 @@ import javax.inject.Inject;
 
 public abstract class BaseActivity<T extends BasePresenter> extends AbstractSimpleActivity implements BaseView {
     @Inject
-    T mPresent;
+    protected T mPresent;
 
     @Override
     protected void onDestroy() {
@@ -30,7 +31,10 @@ public abstract class BaseActivity<T extends BasePresenter> extends AbstractSimp
         super.onDestroy();
     }
     protected ActivityComponent getActivityComponent(){
-        return DaggerActivityComponent.builder().appComponent(MyApp.getAppComponent()).build();
+        return DaggerActivityComponent.builder()
+                .appComponent(MyApp.getAppComponent())
+                .activityModule(new ActivityModule(this))
+                .build();
     }
 
     @Override

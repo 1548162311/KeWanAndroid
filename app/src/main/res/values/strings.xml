@@ -5,4 +5,32 @@
     <string name="collect_fail">Collect fail</string>
     <string name="cancel_collect_fail">Cancel collect fail</string>
     <string name="double_click_exit_tint">Press the back button again to exit the KeWanAndroid</string>
+    <string name="action_search">Search</string>
+
+    <string name="useful_sites">Useful Sites</string>
+    <string name="http_error">network anomaly</string>
+    <string name="unKnown_error">unKnown error</string>
+
+    <string name="login_in">Login</string>
+    <string name="my_collect">Collect</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About Us</string>
+
+    <string name="home_pager">Home pager</string>
+    <string name="knowledge_hierarchy">Knowledge hierarchy</string>
+    <string name="navigation">Navigation</string>
+    <string name="project">Project</string>
+
+    <string name="login_tint">Please login~~</string>
+    <string name="logout_tint">Log out?</string>
+    <string name="ok">OK</string>
+    <string name="no">NO</string>
+
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

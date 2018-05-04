@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scale_down_show_behavior">com.ocn.kewanandroid.widget.behavior.ScaleDownShowBehavior</string>
+
+    <string name="failed_to_cast_mode">\"切换模式失败ヽ(≧Д≦)ノ\"</string>
+</resources>

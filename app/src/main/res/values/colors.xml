@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="title_black">#222222</color>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="drawer_item_bg_n">#fffff9</color>
+    <color name="colorBackground">#EEEEEE</color>
 
+    <color name="yellow">#f39c12</color>
+
+    <color name="drawer_item_bg_p">#e8e8e8</color>
+    <color name="black">#333333</color>
+
+    <color name="comment_text">#5b5d5c</color>
+    <color name="delete_text">#cccccc</color>
+    <color name="blue">#3F9FE0</color>
+
+    <color name="colorCard">#FFFFFF</color>
 
     <color name="white">#ffffff</color>
 </resources>

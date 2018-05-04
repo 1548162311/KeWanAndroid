@@ -30,7 +30,9 @@ public class DataManager implements HttpHelper,DbHelper,PreferenceHelper {
     private PreferenceHelper mPreferenceHelper;
 
     public DataManager(HttpHelper httpHelper,DbHelper dbHelper,PreferenceHelper preferenceHelper){
-
+        mHttpHelper = httpHelper;
+        mDbHelper = dbHelper;
+        mPreferenceHelper = preferenceHelper;
     }
     @Override
     public List<HistoryData> addHistoryData(String data) {

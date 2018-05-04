@@ -8,6 +8,7 @@ import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ocn.kewanandroid.R;
 import com.ocn.kewanandroid.app.MyApp;
@@ -22,6 +23,14 @@ import java.io.IOException;
  */
 
 public class CommonUtils {
+
+
+
+    public static void showMessage(Activity activity, String msg) {
+        LogHelper.e("showMessage ：" + msg);
+        Toast.makeText(activity, msg, Toast.LENGTH_SHORT).show();
+    }
+
     /**
      * 判断2个对象是否相等
      *

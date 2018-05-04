@@ -9,7 +9,7 @@ import com.ocn.kewanandroid.base.view.BaseView;
 public interface AbstractPresenter<T extends BaseView> {
 
 
-    void attachView(T View);
+    void attachView(T view);
 
     void detachView();
 

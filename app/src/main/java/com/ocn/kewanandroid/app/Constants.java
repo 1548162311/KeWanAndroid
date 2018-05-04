@@ -30,8 +30,44 @@ public class Constants {
 
 
     /**
+     * Intent params
+     */
+    public static final String ARG_PARAM1 = "param1";
+
+    public static final String ARG_PARAM2 = "param2";
+
+
+    /**
      * Path
      */
     public static final String PATH_DATA=MyApp.getInstance().getCacheDir().getAbsolutePath()+ File.separatorChar+"data";
     public static final String PATH_CACHE = PATH_DATA +"/NetCache";
+
+    /**
+     * Tag fragment classify
+     */
+    public static final int TYPE_MAIN_PAGER = 0;
+
+    public static final int TYPE_KNOWLEDGE = 1;
+
+    public static final int TYPE_NAVIGATION = 2;
+
+    public static final int TYPE_PROJECT = 3;
+
+    public static final int TYPE_COLLECT = 4;
+
+    public static final int TYPE_SETTING = 5;
+
+    /**
+     * Main Pager
+     */
+    public static final String SEARCH_TEXT = "search_text";
+
+    public static final String MENU_BUILDER = "MenuBuilder";
+
+    public static final String LOGIN_DATA = "login_data";
+
+    public static final String BANNER_DATA = "banner_data";
+
+    public static final String ARTICLE_DATA = "article_data";
 }
